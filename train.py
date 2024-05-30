@@ -21,13 +21,6 @@ def prompt_template(prompt):
         {prompt}
         [/INST]"""
 
-# Test case
-# prompt = prompt_template("who is Nicholas Renotte?") 
-# print(Fore.CYAN + prompt) 
-# tokens = tokenizer.encode(prompt, return_tensors='pt').to('cuda')
-# response = model.generate(tokens)
-# print(Fore.MAGENTA + tokenizer.decode(response[0])) 
-
 # Get the reft model 
 reft_config = pyreft.ReftConfig(
     representations={
